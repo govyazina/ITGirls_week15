@@ -3,6 +3,11 @@ body {
     height: 100vh;
 }
 
+.theme_blue {
+    background-color: #3c4262;
+    color: white;
+}
+
 fieldset {
     border-style: none;
     padding: 0;
@@ -23,12 +28,6 @@ input, .from-where, .lisense {
 
 label, legend {
     padding-top: 2.5rem;
-    /*padding-bottom: 0.5rem;*/
-}
-
-.theme_blue {
-    background-color: #3c4262;
-    color: white;
 }
 
 .wrapper {
