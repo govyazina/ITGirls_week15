@@ -7,45 +7,69 @@
     <!--    font open sans-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+          rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/styles/normalize.css">
     <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
-<body>
+<body class="theme_blue">
 <div class="wrapper">
     <h1 class="title">Форма регистрации</h1>
-    <form>
-        <label for="first-name">1. Имя*</label>
-        <input type="text" name="name" id="first-name" placeholder="Имя">
-        <label for="last-name"></label>
-        <input type="text" name="name" id="last-name" placeholder="Фамилия">
-        <label for="email">2. Эл. почта*</label>
+    <form class="form">
+        <fieldset>
+            <legend><span class="red_number">1.</span> Имя*</legend>
+            <div class="name_inputs">
+
+                <input type="text" name="name" id="first-name" placeholder="Имя">
+                <label for="first-name"></label>
+                <label for="last-name"></label>
+                <input type="text" name="name" id="last-name" placeholder="Фамилия">
+            </div>
+        </fieldset>
+
+        <label for="email"><span class="red_number">2.</span> Эл. почта*</label>
         <input type="email" id="email">
-        <label for="phone">3. Телефон*</label>
+        <label for="phone"><span class="red_number">3.</span> Телефон*</label>
         <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-        <label for="adress">4. Адрес</label>
+        <label for="adress"><span class="red_number">4.</span> Адрес</label>
         <input type="text" id="adress">
-        <label for="b-date">5. Дата рождения</label>
+        <label for="b-date"><span class="red_number">5.</span> Дата рождения</label>
         <input type="date" id="b-date" placeholder="DD/MM/YYYY">
         <fieldset>
-        <legend>6. Где вы услышали о нас?</legend>
-            <input type="radio" name="from-where" id="from-friend">
-            <label for="from-friend">Друг или коллега</label>
-            <input type="radio" name="from-where" id="from-google">
-            <label for="from-google">Google</label>
-            <input type="radio" name="from-where" id="from-yandex">
-            <label for="from-yandex">Yandex</label>
-            <input type="radio" name="from-where" id="from-news">
-            <label for="from-news">Новости, статьи</label>
-            <input type="radio" name="from-where" id="from-other">
-            <label for="from-other">Other</label>
-            <label for="from-other-input"></label>
-            <input type="text" id="from-other-input">
+            <legend><span class="red_number">6.</span> Где вы услышали о нас?</legend>
+            <div class="from-where">
+                <input type="radio" name="from-where" id="from-friend">
+                <label for="from-friend">Друг или коллега</label>
+            </div>
+            <div class="from-where">
+                <input type="radio" name="from-where" id="from-google">
+                <label for="from-google">Google</label>
+            </div>
+            <div class="from-where">
+                <input type="radio" name="from-where" id="from-yandex">
+                <label for="from-yandex">Yandex</label>
+            </div>
+            <div class="from-where">
+                <input type="radio" name="from-where" id="from-news">
+                <label for="from-news">Новости, статьи</label>
+            </div>
+            <div class="from-where">
+                <input type="radio" name="from-where" id="from-other">
+                <label for="from-other">Other</label>
+
+            </div>
+            <div class="other-input">
+                <label for="from-other-input"></label>
+                <input type="text" id="from-other-input">
+            </div>
         </fieldset>
-        <label for="lisense">Я прочитал, понял и принял ПОЛИТИКУ КОНФИДЕНЦИАЛЬНОСТИ для членства.</label>
-        <input type="checkbox" id="lisense">
-        <button type="submit">Разместить</button>
+        <div class="lisense">
+            <input type="checkbox" id="lisense">
+            <label for="lisense">Я прочитал, понял и принял ПОЛИТИКУ КОНФИДЕНЦИАЛЬНОСТИ для членства.</label>
+        </div>
+
+        <button class="button" type="submit">Разместить</button>
     </form>
 </div>
 

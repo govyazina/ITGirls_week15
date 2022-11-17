@@ -1,3 +1,90 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+
+fieldset {
+    border-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input, .from-where, .lisense {
+    background-color: transparent;
+    border: solid 1px #b7b7b7;
+    color: white;
+    padding: 0.8rem 1rem;
+    margin: 0.5rem 0;
+}
+
+.red_number {
+    color: #d90202;
+}
+
+label, legend {
+    padding-top: 2.5rem;
+    /*padding-bottom: 0.5rem;*/
+}
+
+.theme_blue {
+    background-color: #3c4262;
+    color: white;
+}
+
+.wrapper {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem auto;
+    padding-bottom: 5rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.name_inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name_inputs input {
+    width: 44%;
+}
+
+.lisense {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+input[type=date]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+[type="radio"], [type="checkbox"] {
+    margin-right: 1rem;
+}
+
+#from-other-input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.other-input {
+    display: none;
+
+}
+
+.button {
+    align-self: flex-start;
+    background-color: #d90202;
+    border-style: none;
+    color: white;
+    padding: 1rem 2rem;
 }
