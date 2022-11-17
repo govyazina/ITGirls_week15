@@ -76,7 +76,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .other-input {
-    display: none;
+    /*display: none;*/
+    visibility: hidden;
 
 }
 

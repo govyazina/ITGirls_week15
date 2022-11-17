@@ -36,7 +36,7 @@
         <input type="text" id="adress">
         <label for="b-date"><span class="red_number">5.</span> Дата рождения</label>
         <input type="date" id="b-date" placeholder="DD/MM/YYYY">
-        <fieldset>
+        <fieldset onchange="showOtherInput(event)">
             <legend><span class="red_number">6.</span> Где вы услышали о нас?</legend>
             <div class="from-where">
                 <input type="radio" name="from-where" id="from-friend">
@@ -55,13 +55,13 @@
                 <label for="from-news">Новости, статьи</label>
             </div>
             <div class="from-where">
-                <input type="radio" name="from-where" id="from-other">
+                <input type="radio" name="from-where" id="from-other" >
                 <label for="from-other">Other</label>
 
             </div>
-            <div class="other-input">
+            <div class="other-input other-input-find">
                 <label for="from-other-input"></label>
-                <input type="text" id="from-other-input">
+                <input type="text" id="from-other-input" >
             </div>
         </fieldset>
         <div class="lisense">
