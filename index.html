@@ -21,17 +21,17 @@
             <legend><span class="red_number">1.</span> Имя*</legend>
             <div class="name_inputs">
 
-                <input type="text" name="name" id="first-name" placeholder="Имя">
+                <input type="text" name="name" id="first-name" class="required" placeholder="Имя">
                 <label for="first-name"></label>
                 <label for="last-name"></label>
-                <input type="text" name="name" id="last-name" placeholder="Фамилия">
+                <input type="text" name="name" id="last-name" class="required" placeholder="Фамилия">
             </div>
         </fieldset>
 
         <label for="email"><span class="red_number">2.</span> Эл. почта*</label>
-        <input type="email" id="email">
+        <input type="email" id="email" name="e-mail" class="required">
         <label for="phone"><span class="red_number">3.</span> Телефон*</label>
-        <input type="tel" id="phone" pattern="[0-9]{10}" placeholder="введите 10-значный номер без пробелов">
+        <input type="tel" id="phone" name="phone_number" class="required" pattern="[0-9]{10}" placeholder="введите 10-значный номер без пробелов">
         <label for="adress"><span class="red_number">4.</span> Адрес</label>
         <input type="text" id="adress">
         <label for="b-date"><span class="red_number">5.</span> Дата рождения</label>
@@ -65,7 +65,7 @@
             </div>
         </fieldset>
         <div class="lisense">
-            <input type="checkbox" id="lisense">
+            <input type="checkbox" id="lisense" onclick="checkLisense()">
             <label for="lisense">Я прочитал, понял и принял ПОЛИТИКУ КОНФИДЕНЦИАЛЬНОСТИ для членства.</label>
         </div>
 
