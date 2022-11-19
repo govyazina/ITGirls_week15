@@ -69,3 +69,10 @@ function validateRequiredFields() {
     })
     return check;
 }
+
+
+//theme changer
+
+function changeTheme(value) {
+    document.body.setAttribute('class', value);
+}
